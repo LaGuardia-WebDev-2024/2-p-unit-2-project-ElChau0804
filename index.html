@@ -1,14 +1,14 @@
 <!--Unit 2 Project
 Requirements
-[  ] Two Element Selectors
-[  ] Two ID Selectors
+[ x ] Two Element Selectors
+[ x ] Two ID Selectors
 [  ] Two Class Selectors
-[  ] Three Images
+[ x ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include Border Radius CSS Property 
 [ no ] Feature 2 - Include a Static Background Image
-[ no ] Feature 3 - Include An Animated Background Color Change
+[ yes ] Feature 3 - Include An Animated Background Color Change
 [ no ] Feature 4 - Embed YouTube Video 
 [ no ] Feature 5 - Include Border CSS Property 
 -->
@@ -19,7 +19,10 @@ Select ONE Additional Feature to Add
         <meta charset="utf-8">
         <title>SHANGHAI</title>
         <style>
-        body {background-color: rgb(16, 57, 92);}
+        body {text-align: center;}
+        p {font-size: 25px}
+        h2 {font-size: 50px}
+        h1 {font-size: 75px;}
         h1 {color:#ffffff}
         #Bund {
         color:rgb(68, 68, 167)}
@@ -28,22 +31,32 @@ Select ONE Additional Feature to Add
         #popmart {
             color:rgb(138, 94, 179)}
             p {color:aliceblue}
-            h2 {
-
-  text-shadow: -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
-}
+            h2 {text-shadow: 
+            -1px -1px 0 #ffffff, 
+            1px -1px 0 #ffffff, 
+            -1px 1px 0 #ffffff, 
+            1px 1px 0 #ffffff;}
+            .image {width: 600px}
+            .image {border: 5px solid white}
+            body, html {animation: colorChange 10s infinite
+            alternate;}
+            @keyframes colorChange {
+      0% { background-color: #5b628a50; }
+      50% { background-color: #8f96be; }
+      100% { background-color: #424974; }
+    }
         </style>
     </head>
     <body>
-<h1>Places to go!</h1>
+<h1>Places to go in <strong><u>Shanghai</u></strong>!</h1>
 <h2 id="Bund">The Bund </h2>
 <p>The bund is a sightseeing spot, known for its night light up show and being a waterfront, visited by many. There is a mix of historical architecture and modern skyscrapers side by side on pudong. </p>
-<img src="https://www.alexisjetsets.com/wp-content/uploads/2019/09/the-bund-shanghai-alexisjetsets-2-e1568976232366.jpg" width="300" </img> <br>
+<img class="image" src="https://www.alexisjetsets.com/wp-content/uploads/2019/09/the-bund-shanghai-alexisjetsets-2-e1568976232366.jpg" width="300" </img> <br>
 <h2 id="yuyuan">The Yuyuan garden</h2>
-<p>A beautiful historical traditional garden, where you can walk through and see classical art, architecture, flowers and more.<br>
-<img src="https://pohcdn.com/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/garden_optimized.jpg" width="300" </img> <br>
+<p>A beautiful historical traditional garden, where you can walk through and see classical art, architecture, flowers and more.</p><br>
+<img class="image" src="https://pohcdn.com/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/garden_optimized.jpg" width="300" </img> <br>
 <h2 id="popmart">Biggest Popmart</h2>
 <p>Shanghai holds one of the worlds biggest popmart buildings, with so many different figures on display like the Nyota, Hirono, Skull panda and so many others.</p> <br>
-<img src="https://english.shhuangpu.gov.cn/att/20220914/1663146210820085951.png" width="300" </img> <br>
+<img class="image" src="https://english.shhuangpu.gov.cn/att/20220914/1663146210820085951.png" width="300" </img> <br>
     </body>
 </html>
